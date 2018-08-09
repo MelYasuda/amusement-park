@@ -1,20 +1,9 @@
-var height
 $(document).ready(function() {
-
-  var age = parseInt(prompt("How tall are you?"));
+  var height = parseInt(prompt("How tall are you?"));
 
 if (height >= 60) {
-  adultAllowableRides();
+  $("#adultAllowableRides").show();
 } else {
-    $(#childrenRides).show();
+    $("#childrenAllowableRides").show();
 }
-
-
-if (height < 60) {
-  childrenAllowableRides();
-}  else {
-    $(#adultRides).show();
-}
-
-});
 });
